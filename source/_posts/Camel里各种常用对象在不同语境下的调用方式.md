@@ -1,6 +1,9 @@
 title: Camel里各种常用对象在不同语境下的调用方式
 date: 2015-07-08 01:59:31
+categories:
+- Dev
 tags:
+- Camel
 ---
 
 来总结一下property，header和body在各个context下的引用方式
