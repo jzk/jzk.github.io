@@ -79,12 +79,12 @@ ${property.xx}
 </setHeader>
 ```
 
-***groovy**        
+**groovy**        
 ```
-exchange.headers.xx
+request.headers.xx
 ```
 
-*simple**       
+**simple**       
 ```
 $simple{header.xx}
 ```
