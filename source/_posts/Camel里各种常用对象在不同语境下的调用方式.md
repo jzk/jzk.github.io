@@ -61,9 +61,7 @@ ${property.xx}
 ```
 
 **uri reference**   
-```
-<log message="bla bla ${property.xx}"/>
-```
+同simple的格式
 
 **java**
 ```
@@ -86,12 +84,26 @@ request.headers.xx
 
 **simple**       
 ```
-$simple{header.xx}
+$simple{header.xx} or ${header.xx}
 ```
 
 **uri reference** 
+好像是用simple的格式，估计jdbc那种ref还是没有办法用的，但是普通的uri里面还是可以用的
 ```
-#deducable, need prove
+
+<setBody>
+    <simple>
+        this is a test only
+    </simple>
+</setBody>
+
+<setHeader headerName="ff">
+    <simple>test</simple>
+</setHeader>
+
+
+<to uri="file:///tmp/test?fileName=${header.ff}"/>
+
 ```
 
 **java**
@@ -102,7 +114,12 @@ $simple{header.xx}
 ## body in Camel
 **definition**       
 ```
-<property name="xx" value="100" /> 
+<setBody>
+    <simple>
+        SELECT name FROM store.store where id = 1;
+    </simple>
+</setBody>
+
 ```
 
 **groovy**        
@@ -115,10 +132,8 @@ request.body
 ${body['xx']}/${body.xx}
 ```
 
-**uri reference**    
-```
-#deducable, need prove
-```
+**uri reference**  
+同simple格式
 
 **Java**                    
 ```
