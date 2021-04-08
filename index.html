@@ -282,6 +282,500 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jzk.github.io/2020/04/10/200410_gradle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhenkai Jiang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿J's 笔记铺">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2020/04/10/200410_gradle/" class="post-title-link" itemprop="url">开始学Gradle</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-04-10 17:37:00" itemprop="dateCreated datePublished" datetime="2020-04-10T17:37:00-07:00">2020-04-10</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
+              </span>
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近要接手dot com的一部分工作，他们的架构用了gradle，以前没怎么用过，只好花点时间开始看。</p>
+<p>目前为止学到这些</p>
+<ol>
+<li>Gradle里面默认全是Groovy代码，而且是包裹在Script这个对象里的。所以可以直接调用各种方法</li>
+<li>内置的一个对象logger可以直接调用logger.info 方法来输出log，用<code>gradle build -i</code>来enable info level的log</li>
+<li>Gradle 的lifecycle分成了3部分，initialization，configuration和excecution</li>
+<li>Gradle 的initialization的步骤会去执行 init.gradle 和 settings.gradle</li>
+<li>init.gradle 会 delegates 给 Gradle对象</li>
+<li>settings.gradle 会 delegates 给 Settings对象</li>
+<li>build.gradle 会 delegates 给 Project对象</li>
+<li>defaultTasks</li>
+<li>Gradle 默认第一次执行的时候会起Daemon，然后以后再执行task就会重用这个daemon，三个小时没有动作就会自动关闭。</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jzk.github.io/2020/01/12/200112-2019_summary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhenkai Jiang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿J's 笔记铺">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2020/01/12/200112-2019_summary/" class="post-title-link" itemprop="url">2019总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-12 20:57:01" itemprop="dateCreated datePublished" datetime="2020-01-12T20:57:01-08:00">2020-01-12</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
+              </span>
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>又到了写年终总结的日子，哈哈，其实从来没有写过，这是第一次。</p>
+<p>去年年初从项目组被抽走，跑去做了推荐系统，其实最后也只是用Spark调用了一下ALS的实现而已。不过因为新项目用到了Spark，外加是在AWS上的EMR cluster，的确是实打实的自己摸索出来了塑料（野路子）用法。除此之外，还稍微入门了一下Jenkins，不至于像以前一样完全不会用了，折腾了Spring Boot, Redis, Elastic Search，成为了k8s的日常用户。花了一年时间，断断续续的复习数学，学习机器学习，学习Collaborative Filtering算法，还是没有时间正式入门。去年断断续续看了一点点书，比起前一年是要少很多（前一年看掉的书里面最重要的一本书是Java并发编程实战—），主要还是工作上的技术比较花时间。</p>
+<p>这些书里最喜欢的书是Designing Data-Intensive Application，虽然还没有看完，今年是一定很看完的，可能还会看第二遍好好做做笔记。总体来说，来美国后的两年的确比在国内有更多的学习动力和动机了。今年也好好好努力。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://jzk.github.io/2020/01/08/200108-elasticsearch-analyzed-or-not/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhenkai Jiang">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿J's 笔记铺">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2020/01/08/200108-elasticsearch-analyzed-or-not/" class="post-title-link" itemprop="url">Elasticsearch的文本字段解析</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-01-08 13:15:00" itemprop="dateCreated datePublished" datetime="2020-01-08T13:15:00-08:00">2020-01-08</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
+              </span>
+            
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>年前读了一本书叫Elastic Search Definitive Guide，由于书的内容太老了，看完才发现很多内容都在新版本里已经不支持了，于是捧着文档又重新看了一下。 在老版本里，文本字段类型只有一种，叫做string。对于设置是否要分词，需要设置”analyzed”属性，在新版本里以及改成了两种不同的文本字段，一种是string, 一种是keyword。对于自动生成的mapping，文本类型的字段会默认映射成 “text”，同时也会生成一个subfield, xxx.keyword，他的类型会是keyword。 这样做的好处是各种use cases都支持了。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://jzk.github.io/2019/07/15/190715-mid/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -327,13 +821,23 @@
                 
               
 
-              <time title="创建时间：2019-07-15 10:20:16 / 修改时间：10:27:09" itemprop="dateCreated datePublished" datetime="2019-07-15T10:20:16-07:00">2019-07-15</time>
+              <time title="创建时间：2019-07-15 10:20:16" itemprop="dateCreated datePublished" datetime="2019-07-15T10:20:16-07:00">2019-07-15</time>
             </span>
           
 
           
             
 
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
+              </span>
             
           
 
@@ -508,7 +1012,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-15 09:54:37" itemprop="dateModified" datetime="2019-07-15T09:54:37-07:00">2019-07-15</time>
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
               </span>
             
           
@@ -687,7 +1191,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-15 09:54:37" itemprop="dateModified" datetime="2019-07-15T09:54:37-07:00">2019-07-15</time>
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
               </span>
             
           
@@ -868,7 +1372,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-15 09:54:37" itemprop="dateModified" datetime="2019-07-15T09:54:37-07:00">2019-07-15</time>
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
               </span>
             
           
@@ -1050,7 +1554,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-15 09:54:37" itemprop="dateModified" datetime="2019-07-15T09:54:37-07:00">2019-07-15</time>
+                <time title="修改时间：2021-04-07 23:19:28" itemprop="dateModified" datetime="2021-04-07T23:19:28-07:00">2021-04-07</time>
               </span>
             
           
@@ -1206,7 +1710,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1285,7 +1789,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
