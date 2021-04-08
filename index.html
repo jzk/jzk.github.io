@@ -327,7 +327,7 @@
                 
               
 
-              <time title="创建时间：2021-04-08 13:59:37 / 修改时间：14:02:35" itemprop="dateCreated datePublished" datetime="2021-04-08T13:59:37-07:00">2021-04-08</time>
+              <time title="创建时间：2021-04-08 13:59:37 / 修改时间：14:03:57" itemprop="dateCreated datePublished" datetime="2021-04-08T13:59:37-07:00">2021-04-08</time>
             </span>
           
 
@@ -378,7 +378,7 @@
 <figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ERROR </span>xxx.xxx.xxx.Class: java.lang.NullPointerException</span><br><span class="line">java.lang.NullPointerException: null</span><br></pre></td></tr></table></figure>
 <p>我先是试图在最近release涉及到这个class的PR里找，但是改动太多了，有点像大海捞针。</p>
 <p>而且看代码里，在用Apache common logs  和log4j，都是大刀阔斧得catch 所有的exception 用下面的代码打log，理论上应该会有stack trace才对。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> &#125; <span class="keyword">catch</span> (<span class="keyword">final</span> Exception e) &#123;</span><br><span class="line">logger.error(e, e);</span><br><span class="line"></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">try</span>&#123;</span><br><span class="line">     <span class="comment">//...</span></span><br><span class="line"> &#125; <span class="keyword">catch</span> (<span class="keyword">final</span> Exception e) &#123;</span><br><span class="line">logger.error(e, e);</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
 <p>后来在Google上搜 <a href="https://www.google.com/search?q=log+java.lang.NullPointerException+no+stack+trace&amp;rlz=1C5GCEM_enUS921US921&amp;sxsrf=ALeKk02BZcvxwTNorHJ3UVv2iye8q0DIEg%3A1617912633654&amp;ei=OWNvYLqPJ8j5-gSfvKHIAw&amp;oq=log+java.lang.NullPointerException+no+stack+trace&amp;gs_lcp=Cgdnd3Mtd2l6EAM6CQgAELADEAgQHjoECCMQJzoECAAQHjoFCCEQoAE6BwghEAoQoAFQu4oCWO-pAmDjqgJoBnAAeACAAe0BiAHBEJIBBjE2LjQuMZgBAKABAaoBB2d3cy13aXrIAQHAAQE&amp;sclient=gws-wiz&amp;ved=0ahUKEwj6j7meuu_vAhXIvJ4KHR9eCDkQ4dUDCA0&amp;uact=5" target="_blank" rel="noopener">log java.lang.NullPointerException no stack trace</a></p>
 <p>找到<a href="https://stackoverflow.com/a/3010106/703308" target="_blank" rel="noopener">这个答案</a>，解释了这个现象。</p>
 <blockquote>
