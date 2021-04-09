@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 阿J's 笔记铺
+title: 阿J's 笔记簿
 subtitle:  写下来，才能记住
 description:
 author: Zhenkai Jiang
@@ -73,5 +73,6 @@ deploy:
   repo: git@github.com:jzk/jzk.github.io.git
 
 # Disqus
-disqus_shortname: jzkgithubio
+disqus_shortname: ahjays-notes
+
 
