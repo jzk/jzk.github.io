@@ -1,0 +1,22 @@
+name: Hexo Deploy
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - uses: yrpang/github-actions-hexo@v1.3
+        with:
+          deploykey: ${{secrets.HEXO_DEPLOY_KEY}}
+          username: jzk
+          email: zk.jiang@gmail.com
