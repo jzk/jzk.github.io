@@ -71,6 +71,7 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:jzk/jzk.github.io.git
+  branch: gh-pages
 
 # Disqus
 disqus_shortname: ahjays-notes
