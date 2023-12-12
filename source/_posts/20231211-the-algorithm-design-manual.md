@@ -1,0 +1,11 @@
+title: The Algorithm Design Manual 阅读进度
+date: 2023-12-11 19:55:35
+tags:
+---
+
+尝试记录一下阅读 **The Algorithm Design Manual** 的进度
+
+| 日期     | 页数 |
+| -------- | ---- |
+| 12/10/23 | 27/800     |
+| 12/11/23         | 44/800     |
