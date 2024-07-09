@@ -92,3 +92,6 @@ theme_config:
       label: "@jzk"
       link: https://twitter.com/jzk\
 
+  disqus:
+    enabled: true
+    shortname: ahjays-notes
