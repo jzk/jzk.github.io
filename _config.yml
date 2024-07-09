@@ -80,4 +80,18 @@ disqus_shortname: ahjays-notes
 
 theme_config:
   colorscheme: light
+  posts_overview:
+    show_all_posts: true
+  social_links:
+    -
+      icon: github
+      link: your-github-url
+    -
+      icon: twitter
+      label: "@your-twitter-handle"
+      link: your-twitter-url
+    -
+      icon: NAME
+      label: LABEL
+      link: your-NAME-url  
 
