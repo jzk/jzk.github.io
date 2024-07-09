@@ -82,7 +82,7 @@ theme_config:
   colorscheme: light
   posts_overview:
     show_all_posts: true
-  rss:
+  rss: atom.xml
   social_links:
     -
       icon: github
