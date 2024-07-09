@@ -93,5 +93,5 @@ theme_config:
       link: https://twitter.com/jzk\
 
   disqus:
-    enabled: true
+    enabled: false
     shortname: ahjays-notes
