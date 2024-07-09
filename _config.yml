@@ -85,13 +85,9 @@ theme_config:
   social_links:
     -
       icon: github
-      link: your-github-url
+      link: https://github.com/jzk
     -
       icon: twitter
-      label: "@your-twitter-handle"
-      link: your-twitter-url
-    -
-      icon: NAME
-      label: LABEL
-      link: your-NAME-url  
+      label: "@jzk"
+      link: https://twitter.com/jzk\
 
