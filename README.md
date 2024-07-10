@@ -1,1 +1,1 @@
-现在用Github Action，push完了要过1-2分钟就会刷新
+现在用Github Action，push完了过1-2分钟就会自动build和deploy
