@@ -10,7 +10,7 @@ tags:
 
 当时第一次尝试的时候，我看到这个[豆瓣的帖子](https://book.douban.com/review/13496209/)，里面提到了用Serial Reader 这个app，把全书切割成 79 Issues，一天看一个issue，这样可以在79天里完成。另外还提到了[这个Moby Dick的原文注释网站](http://www.powermobydick.com)。
 
-怕重蹈覆辙，我又搜了一下最好的中文译本是上海译文出版社出版的曹庸的译本。
+怕重蹈覆辙，我又搜了一下最好的中文译本是[上海译文出版社出版的曹庸的译本](https://book.douban.com/subject/2170030/)。
 
 这次我尝试双管齐下，一方面在[这个Moby Dick的原文注释网站](http://www.powermobydick.com)先看原文，配合字典和注释看一句话，然后不管看懂没看懂，都去看曹庸的译本来验证我的理解。
 
