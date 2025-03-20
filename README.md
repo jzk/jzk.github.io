@@ -8,4 +8,4 @@
 
 ## Stress Free的publish过程
 
-我本地的定时运行的`~/backup_repos.sh`脚本，会自动push change。在push完了，这个Repo的Github Action，过1-2分钟就会自动build和deploy。
+我本地的定时运行的`~/backup_repos.sh`脚本，会自动push change。push好change后，这个Repo的Github Action会自动build和deploy，整个过程只需1-2分钟，https://jzk.github.io/ 的内容就会更新完毕。
