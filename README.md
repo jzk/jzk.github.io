@@ -1,7 +1,7 @@
 ## 创建新Post
 
 可以用下面的命令：
-`hexo new post 250319_医生说我没有ADHD`
+`hexo new post 250928-2025年9月小结`
 
 也可以直接clone一个现有的post的md文件
 
